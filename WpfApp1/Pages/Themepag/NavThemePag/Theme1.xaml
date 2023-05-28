@@ -1,0 +1,125 @@
+﻿<Page x:Class="WpfApp1.Pages.Themepag.NavThemePag.Theme1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Pages.Themepag.NavThemePag"
+      mc:Ignorable="d" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Theme1">
+    <Border>
+        <Grid>
+            
+
+            <Image Source="/Images/maintheme.jpg" 
+               Stretch="Fill"/>
+            <Border Width="250"
+                    Height="250"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Right">
+                <Button
+                    Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}"
+                    Width="55"
+                    Height="55"
+                        Background="Transparent"
+                    Content="{materialDesign:PackIcon Kind=Home}"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    x:Name="HoooBa"
+                    Click="HoooBa_Click"></Button>
+            </Border>
+            <Border Width="550"
+                Height="250"
+                VerticalAlignment="Top"
+                    HorizontalAlignment="Left">
+                <Grid>
+                    <Image Source="/Images/f1w.png" />
+                    <StackPanel
+                    Margin="24,81,25,5">
+                        <Image Source="/Images/eee.png" Height="83" />
+
+
+                    </StackPanel>
+                </Grid>
+
+            </Border>
+            <Border Width="800"
+                Height="150"
+                VerticalAlignment="Bottom">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <TextBlock Text="Натуральная мажорная гамма"
+                                   Style="{StaticResource TextBloc}"
+                               VerticalAlignment="Bottom"
+                               Width="350"/>
+                    </Grid>
+
+                    <Button
+                            x:Name="In2"
+                            Click="In2_Click"
+                            Style="{StaticResource ButtStylmenu}"
+                            Content="{materialDesign:PackIcon Kind=AcademicCap, Size=35}"
+                            
+                            >
+                        <Button.Triggers>
+                            <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard Storyboard.TargetProperty="Width" 
+                                                         
+                                                        Storyboard.TargetName="In1">
+                                        <DoubleAnimation From="80" To="100"
+                                                    AutoReverse="True"
+                                                    RepeatBehavior="0:1:50"
+                                                    Duration="0:0:3"/>
+
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Button.Triggers>
+
+
+                    </Button>
+
+                    <Grid Grid.Column="1">
+                        <TextBlock Text="Натуральная минорная гамма"
+                                   Style="{StaticResource TextBloc}"
+                               VerticalAlignment="Bottom"
+                               Width="350" Grid.Column="1" />
+                        <Button
+                            x:Name="In1"
+                            Click="In1_Click"
+                            Style="{StaticResource ButtStylmenu}"
+                            Content="{materialDesign:PackIcon Kind=AcademicCap, Size=35}" 
+                            >
+                            <Button.Triggers>
+                                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                                    <BeginStoryboard>
+                                        <Storyboard Storyboard.TargetProperty="Width" 
+                                                         
+                                                        Storyboard.TargetName="In2">
+                                            <DoubleAnimation From="80" To="100"
+                                                    AutoReverse="True"
+                                                    RepeatBehavior="0:1:50"
+                                                    Duration="0:0:3"/>
+
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Button.Triggers>
+
+
+                        </Button>
+                    </Grid>
+                </Grid>
+
+            </Border>
+
+        </Grid>
+    </Border>
+</Page>

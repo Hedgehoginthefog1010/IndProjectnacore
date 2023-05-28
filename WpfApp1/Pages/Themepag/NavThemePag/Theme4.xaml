@@ -1,0 +1,45 @@
+﻿<Page x:Class="WpfApp1.Pages.Themepag.NavThemePag.Theme4"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Pages.Themepag.NavThemePag"
+      mc:Ignorable="d" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Theme4">
+
+    <Grid>
+        <Image Source="/Images/maintheme.jpg" 
+               Stretch="Fill"/>
+        <Border Width="58"
+                    Height="81"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Right">
+            <Button
+                    Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}"
+                    Width="55"
+                    Height="55"
+                        Background="Transparent"
+                    Content="{materialDesign:PackIcon Kind=Home}"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    x:Name="HoooBa4"
+                    Click="HoooBa4_Click"></Button>
+        </Border>
+        <Grid>
+            <Image Source="/Images/f1w.png"/>
+            <StackPanel Margin="35,86,29,0" Height="286" 
+                    >
+                <Image Source="/Images/minooor.png" />
+
+            </StackPanel>
+        </Grid>
+
+
+
+
+    </Grid>
+
+
+</Page>

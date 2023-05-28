@@ -1,0 +1,148 @@
+﻿<Page x:Class="WpfApp1.Pages.Themepag.NavThemePag.Theme6"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Pages.Themepag.NavThemePag"
+      mc:Ignorable="d" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Theme6">
+    <Grid>
+        <Image Source="/Images/maintheme.jpg" 
+               Stretch="Fill"/>
+        <TextBlock Text="Тестовые задания: Трезвучия"
+                   Style="{StaticResource TextBloc}"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <Border Width="auto" 
+                        Margin="0,22,0,0"
+                        >
+                    <GroupBox
+                    Style="{StaticResource MaterialDesignGroupBox}" 
+                        Margin="10,68,10,118">
+
+                        <StackPanel>
+                            <TextBlock
+                            Text="Какое трезвучие называется большим?" 
+                             FontSize="15"/>
+                            <RadioButton IsChecked="True"
+                                             x:Name="k1"
+                                             Click="k1_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                Мажорное</RadioButton>
+                            <RadioButton IsChecked="True"
+                                             x:Name="k2"
+                                             Click="k2_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                Увеличенное</RadioButton>
+                            <TextBlock Text="Что такое трезвучие"
+                                           FontSize="15"
+                                           Foreground="Black">
+
+                            </TextBlock>
+                            <RadioButton IsChecked="True"
+                                             x:Name="k3"
+                                             Click="k3_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9" >
+                                Аккорд,состоящий из 3 звуков,расположенных по терциям</RadioButton>
+                            <RadioButton IsChecked="True"
+                                             x:Name="k4"
+                                             Click="k4_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9" Width="347" Height="37">
+
+                                Обращение большого трезвучия.</RadioButton>
+                        </StackPanel>
+                    </GroupBox>
+                </Border>
+
+            </Grid>
+            <Grid Grid.Column="1">
+                <Border Width="auto"
+                        Height="450"
+                        
+                        >
+                    <GroupBox
+                     Style="{StaticResource MaterialDesignGroupBox}" 
+                     Margin="10,68,0,118" >
+
+                        <StackPanel>
+                            <TextBlock
+                            Text="Как строится уменьшенное трезвучие" 
+                             FontSize="15"
+                       />
+                            <RadioButton IsChecked="True"
+                                             x:Name="k5"
+                                         Click="k5_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9" >
+                                м.3 и м.3.Между крайними звуками ум.5
+                            </RadioButton>
+                            <RadioButton IsChecked="True"
+                                            x:Name="k6"
+                                         Click="k6_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                б.3 и м.3</RadioButton>
+                            <TextBlock
+                            Text="А минорное?" 
+                             FontSize="15"
+                      />
+                            <RadioButton IsChecked="True"
+                                             x:Name="k7"
+                                             Click="k7_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                м.3 и б.3.</RadioButton>
+                            <RadioButton IsChecked="True"
+                                             x:Name="k8"
+                                             Click="k8_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                б.3 и б.3</RadioButton>
+                        
+
+                        </StackPanel>
+                    </GroupBox>
+                </Border>
+            </Grid>
+        </Grid>
+        <Button
+                     Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}"
+                    Width="55"
+                    Height="55"
+                        Background="Transparent"
+                    Content="{materialDesign:PackIcon Kind=Home}"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    x:Name="HoooBa6"
+                    Click="HoooBa6_Click">
+        </Button>
+    </Grid>
+</Page>

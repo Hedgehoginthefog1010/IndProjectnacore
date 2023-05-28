@@ -1,0 +1,144 @@
+﻿<Page x:Class="WpfApp1.Pages.MainPage1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Pages"
+      mc:Ignorable="d" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage1">
+
+    <Grid>
+        <Image Source="/Images/12.jpg" 
+               Stretch="Fill"/>
+        <Border Height="450"
+                Width="500"
+                HorizontalAlignment="Center">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition  Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0"
+                      Margin="0 25 0 0">
+
+                    <Image Source="/Images/mainete.png"
+                       Width="498"
+                       VerticalAlignment="Top"/>
+                    <StackPanel
+                        VerticalAlignment="Top">
+                        <Image Source="/Images/hello.png" 
+                               Width="340"
+                               Margin="0 5 0 0 "/>
+
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Border Width="250"
+                Height="183"
+                VerticalAlignment="Bottom" >
+                        <Button x:Name="Randomer"
+                                Click="Randomer_Click"
+                                Style="{StaticResource ButStyle}">
+                            <Button.Triggers>
+                                <EventTrigger RoutedEvent="Loaded">
+                                    <EventTrigger.Actions>
+                                        <BeginStoryboard>
+                                            <Storyboard TargetProperty="Width" 
+                                                         
+                                                        TargetName="Randomer">
+                                                <DoubleAnimation From="70" To="100"
+                                                    AutoReverse="True"
+                                                    RepeatBehavior="0:1:50"
+                                                    Duration="0:0:3"/>
+
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger.Actions>
+                                </EventTrigger>
+                            </Button.Triggers>
+                        </Button>
+                    </Border>
+                </Grid>
+
+
+            </Grid>
+
+        </Border>
+        <Border
+            Width="145"
+            Height="450"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Button
+                x:Name="Qwes"
+                Click="Qwes_Click"
+                Width="55"
+                Height="55"
+                Background="Transparent"
+                BorderBrush="Black"
+                BorderThickness="5"
+                Foreground="Beige"
+                FontSize="15"
+                Content="{materialDesign:PackIcon Kind=QuestionMark}"
+                Style="{StaticResource MaterialDesignFlatButton}" 
+                VerticalAlignment="Top"
+                        HorizontalAlignment="Left"
+>
+
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Button
+                        x:Name="themes"
+                        Click="themes_Click"
+                        Width="55"
+                Height="55"
+                Background="Transparent"
+                BorderBrush="Black"
+                BorderThickness="5"
+                Foreground="Beige"
+                FontSize="15"
+                Content="{materialDesign:PackIcon Kind=ListBox}"
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Left"/>
+
+                </Grid>
+            </Grid>
+        </Border>
+        <Border
+            Width="145"
+            Height="450"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="1">
+                    <Button
+                        x:Name="Clossss"
+                        Click="Clossss_Click"
+                    Height="55"
+                Background="Transparent"
+                BorderBrush="Black"
+                BorderThickness="5"
+                Foreground="Beige"
+                FontSize="15"
+                Content="{materialDesign:PackIcon Kind=Power}"
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right"/>
+                </Grid>
+            </Grid>
+            
+        </Border>
+    </Grid>
+</Page>

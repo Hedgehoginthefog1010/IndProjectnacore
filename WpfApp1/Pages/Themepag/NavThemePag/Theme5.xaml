@@ -1,0 +1,150 @@
+﻿<Page x:Class="WpfApp1.Pages.Themepag.NavThemePag.Theme5"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Pages.Themepag.NavThemePag"
+      mc:Ignorable="d" 
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Theme5">
+
+    <Grid>
+        <Image Source="/Images/maintheme.jpg" 
+               Stretch="Fill"/>
+        <TextBlock Text="Тестовые задания: Гамма"
+                   Style="{StaticResource TextBloc}"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <Border Width="auto" Margin="0,22,0,0"
+                        >
+                    <GroupBox
+                                  Style="{StaticResource MaterialDesignGroupBox}" Margin="10,68,10,118">
+
+                        <StackPanel>
+                            <TextBlock
+                            Text="Укажите верную структуру мажорной гаммы:" 
+                             FontSize="15"
+                        
+                            Opacity="0.9"/>
+                            <RadioButton IsChecked="True"
+                                             x:Name="T1"
+                                             Click="T1_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                Тон, тон, полутон, тон, тон, тон, полутон</RadioButton>
+                            <RadioButton IsChecked="True"
+                                             x:Name="T2"
+                                             Click="T2_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                Тон, полутон, тон, тон, полутон, тон, тон</RadioButton>
+                            <TextBlock Text="Что такое минорная гамма?"
+                                           FontSize="15"
+                                           Foreground="Black">
+                            </TextBlock>
+                            <RadioButton IsChecked="True"
+                                             x:Name="t3"
+                                             Click="t3_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                Фундаментальная гамма из семи нот,звучит весело</RadioButton>
+                            <RadioButton IsChecked="True"
+                                             x:Name="t4"
+                                             Click="t4_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9" Width="347" Height="37">
+                                Гамма без хроматических изменений.
+                                    Звучание–грустное.</RadioButton>
+
+                        </StackPanel>
+                    </GroupBox>
+                </Border>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Border Width="auto"
+                        Height="450"
+                        >
+                    <GroupBox
+                     Style="{StaticResource MaterialDesignGroupBox}" 
+                      
+                        Margin="10,68,0,118">
+                        <StackPanel>
+                            <TextBlock
+                            Text="Гармонический минор-это..." 
+                            FontSize="15"/>
+                            <RadioButton IsChecked="True"
+                                             x:Name="t5"
+                                             Click="t5_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                Разновидность минора с повышенной VII ступенью.</RadioButton>
+                            <RadioButton IsChecked="True"
+                                             x:Name="t6"
+                                             Click="t6_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                Гамма,в которой повышается 6 ступень</RadioButton>
+                            <TextBlock
+                            Text="Гармонический мажор-это..." 
+                             FontSize="15"
+                        
+                            />
+                            <RadioButton IsChecked="True"
+                                             x:Name="t7"
+                                             Click="t7_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                Разновидность мажора с повышенной 6 ступенью.</RadioButton>
+                            <RadioButton IsChecked="True"
+                                             x:Name="t8"
+                                             Click="t8_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                Разновидность мажора без повышения и понижения ступени</RadioButton>
+                        
+                        </StackPanel>
+                    </GroupBox>
+        
+                </Border>
+            </Grid>
+            
+
+        </Grid>
+        <Button
+                     Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}"
+                    Width="55"
+                    Height="55"
+                        Background="Transparent"
+                    Content="{materialDesign:PackIcon Kind=Home}"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    x:Name="HoooBa5"
+                    Click="HoooBa5_Click">
+        </Button>
+    </Grid>
+
+
+</Page>

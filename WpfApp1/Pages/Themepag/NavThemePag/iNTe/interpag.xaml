@@ -1,0 +1,25 @@
+﻿<Page x:Class="WpfApp1.Pages.Themepag.NavThemePag.iNTe.interpag"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Pages.Themepag.NavThemePag.iNTe"
+      mc:Ignorable="d"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      Background="Beige"
+      Opacity="0.85"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="interpag">
+
+    <Grid>
+        <Image Source="/Images/intt.jpeg" Margin="0,0,107,0" />
+        <Button
+            x:Name="Homme"
+            Click="Homme_Click"
+            Style="{StaticResource MaterialDesignFloatingActionLightButton}"
+            Content="{materialDesign:PackIcon Kind=ArrowBack, Size=35}"
+            
+            Margin="714,369,30,25"></Button>
+
+    </Grid>
+</Page>

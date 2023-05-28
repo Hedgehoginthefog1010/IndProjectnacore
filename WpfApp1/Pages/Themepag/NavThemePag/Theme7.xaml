@@ -1,0 +1,149 @@
+﻿<Page x:Class="WpfApp1.Pages.Themepag.NavThemePag.Theme7"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Pages.Themepag.NavThemePag"
+      mc:Ignorable="d"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Theme7">
+
+    <Grid>
+        <Image Source="/Images/maintheme.jpg" 
+               Stretch="Fill"/>
+        <TextBlock Text="Тестовые задания: Интервалы"
+                   Style="{StaticResource TextBloc}"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Border Width="auto" 
+                        Margin="0,22,0,0"
+                        >
+                    <GroupBox
+                    Style="{StaticResource MaterialDesignGroupBox}" 
+                        Margin="10,68,10,118">
+
+                        <StackPanel>
+                            <TextBlock
+                            Text="Что это?" 
+                             FontSize="15"/>
+                            <RadioButton IsChecked="True"
+                                             x:Name="o1"
+                                             Click="o1_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                Мера определения соотношения</RadioButton>
+                            <RadioButton IsChecked="True"
+                                             x:Name="o2"
+                                             Click="o2_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                У окестра перерыв</RadioButton>
+
+                            <RadioButton IsChecked="True"
+                                             x:Name="o3"
+                                             Click="o3_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                Красивый аккорд</RadioButton>
+                            <RadioButton IsChecked="True"
+                                             x:Name="o5"
+                                             Click="o5_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                Расписание движения маршрутки</RadioButton>
+                            <RadioButton IsChecked="True"
+                                             x:Name="o6"
+                                             Click="o6_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                Ну не знаю я!!!</RadioButton>
+
+
+                        </StackPanel>
+                    </GroupBox>
+                </Border>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Border Width="auto"
+                        Height="450"
+                        >
+                    <GroupBox
+                     Style="{StaticResource MaterialDesignGroupBox}" 
+                     Margin="10,68,0,118" >
+
+                        <StackPanel>
+                            <TextBlock
+                            Text="Какое расстояние между нотами в ч5?" 
+                           FontSize="15"
+                       />
+                            <RadioButton IsChecked="True"
+                                             x:Name="o7"
+                                         Click="o7_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9" >
+                                5</RadioButton>
+                            <RadioButton IsChecked="True"
+                                            x:Name="o8"
+                                         Click="o8_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                0.5 см</RadioButton>
+                            <TextBlock
+                            Text="А  сколько пулотонов в м6?" 
+                             FontSize="15"
+                        
+                           />
+                            <RadioButton IsChecked="True"
+                                             x:Name="o9"
+                                             Click="o9_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                6.</RadioButton>
+                            <RadioButton IsChecked="True"
+                                             x:Name="o10"
+                                             Click="o10_Click"
+                                             Margin="3"
+                                             Style="{StaticResource MaterialDesignAccentRadioButton}"
+                                             Foreground="White"
+                                             Opacity="0.9">
+                                4</RadioButton>
+                        </StackPanel>
+                    </GroupBox>
+                </Border>
+            </Grid>
+        </Grid>
+        <Button
+                     Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}"
+                    Width="55"
+                    Height="55"
+                        Background="Transparent"
+                    Content="{materialDesign:PackIcon Kind=Home}"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    x:Name="HoooBa7"
+                    Click="HoooBa7_Click">
+        </Button>
+    </Grid>
+</Page>
